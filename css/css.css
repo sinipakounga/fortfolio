@@ -1,0 +1,113 @@
+body {
+  background-color: #e0dede;
+}
+
+.profile {
+  margin-top: 100px;
+  width: 25%;
+  border-radius: 50%;
+  position: relative;
+  animation-name: profile;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.lrt1 {
+  background-image: url(lrt1.png);
+  animation: lrt 5s linear infinite;
+  background-repeat: repeat-x;
+  background-size: contain;
+  position: relative;
+  height: 20vh;
+  padding-bottom: 2rem;
+  z-index: 1;
+  animation-direction: alternate;
+
+}
+.info{
+  height: 300px;
+  width: auto;
+}
+
+@keyframes lrt
+{
+  0%{
+    transform: translateX(1500px);
+
+  }
+  100% {
+    transform: translateX(-1500px);
+  }
+}
+
+.header {
+  text-align: center;
+
+}
+.info{
+  width: auto;
+  height: 100px;
+  margin-top: 3rem;
+}
+h1 {
+
+  position: relative;
+  font-size: 3.4rem;
+  font-weight: 900;
+  color: #000;
+  overflow: hidden;
+  text-align: center;
+
+
+}
+h1:before{
+  content: '';
+  position: absolute;
+
+  left: -20%;
+  width:120%;
+  height: 100%;
+  background: linear-gradient(90deg,transparent 0%, #e0dede 5%, #e0dede 100%);
+  animation: animate 10s  linear forwards;
+  text-align: center;
+}
+@keyframes animate {
+0%{
+  left: -20%;
+}
+100%{
+  left: 110%;
+}
+
+}
+video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  transform:rotate(180deg);
+}
+#body {
+  margin: 5rem auto 2rem;
+}
+
+.body-body {}
+
+.col-sm-6 {
+  padding: 3rem 1rem 3rem;
+}
+
+.parallax-window {
+  min-height: 500px;
+  background: transparent;
+  z-index: 100;
+}
+
+.web {
+  padding-bottom: 4rem;
+}
